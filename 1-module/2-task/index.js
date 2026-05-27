@@ -11,11 +11,14 @@ function print(text) {
  */
 function isValid(name) {
     let j = 0
+    if (name == null) {
+      return false
+    }
     for (i = 0; i < name.length; i++){
     if (name[i] == ' ') {
         j += 1
     }}
-    if (j > 0 || name.length < 4) {
+    if (j > 0 || name.length < 4 ) {
         return false
     }
     else {
