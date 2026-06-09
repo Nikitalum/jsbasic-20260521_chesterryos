@@ -1,7 +1,9 @@
 let calculator = {
-    read: function(a,b){el1 = a, el2 = b},
-    sum: function(){return el1 + el2},
-    mul: function(){return el1 * el2},
+    read: function(a,b){
+        this.a = a, 
+        this.b = b},
+    sum: function(){return this.a + this.b},
+    mul: function(){return this.a * this.b},
 };
 
 // НЕ УДАЛЯТЬ СТРОКУ, НУЖНА ДЛЯ ПРОВЕРКИ
